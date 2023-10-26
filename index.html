@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+        <header>
+             <div class="logo">
+               <a href="#">Belén Aylín</a>
+            </div>
+            <nav id="nav">
+              <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li> 
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>   
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <h1>Belén Gutiérrez</h1>
+            <h2>Desarrolladora Full Stack Junior</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div     class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Buenas buenas, soy Belén </span>una joven programadora con interés en oportunidades en las cuales pueda enfrentarme a desafíos, ya que me considero ingeniosa a la hora de resolverlos, además soy proactiva, lo que me mantiene en constante aprendizaje.</p>
+
+            <div class="fila">
+             <!-- Datos personales -->
+              <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong> 01-07-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong> 9 2090 9935
+                        </li>
+                        <li>
+                            <strong>Email</strong> belengutdiaz@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong> Región Metropolitana, Santiago
+                        </li>
+                    </ul>
+              </div>
+              <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>LEER</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>EXPLORAR</span>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i> 
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seccion skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class= "fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>HTML y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Templanza</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsable</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingeniosa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion portafolio -->
+
+    <!-- Seccion contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Número de teléfono">
+                    <input type="text" placeholder="Correo electrónico">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje
+                        <i class="fa-regular fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba"><i class="fa-solid fa-angles-up"></i></a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
